@@ -1,0 +1,72 @@
+<!-- Copyright Vi/Vee/Suzy/names are fucking hard -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RGB Goodness</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+</head>
+
+<style>
+html {
+    background-color: #181A1B;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    animation-name: rainbowWaveBorder;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+h1, p {
+    animation-name: rainbowWaveTextShadow;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+} 
+ 
+.is-full-height {
+    height: 100%;
+
+}
+
+/*
+    red yellow green blue purple
+    red yellow green cyan blue purple pink red
+
+*/
+
+@keyframes rainbowWaveTextShadow { 
+    0%      {text-shadow: 0rem 0rem .4rem #fd0001; color: #fd0001;}
+    20%     {text-shadow: 0rem 0rem .3rem #fcb800; color: #fcb800;}
+    40%     {text-shadow: 0rem 0rem .4rem #00fc0b; color: #00fc0b;}
+    60%     {text-shadow: 0rem 0rem .5rem #00c6fd; color: #00c6fd;}
+    80%     {text-shadow: 0rem 0rem .5rem #fd00ec; color: #fd00ec;}
+    100%    {text-shadow: 0rem 0rem .4rem #fd0001; color: #fd0001;}
+}
+
+@keyframes rainbowWaveBorder { 
+    20%     {border: .3rem solid #fcb800;}
+    0%      {border: .3rem solid #fd0001;}
+    40%     {border: .3rem solid #00fc0b;}
+    60%     {border: .3rem solid #00c6fd;}
+    80%     {border: .3rem solid #fd00ec;}
+    100%    {border: .3rem solid #fd0001;}
+}
+
+</style>
+
+<body>
+    <section class="section">
+        <div class="continer has-text-centered is-family-monospace is-italic is-full-height">
+            <h1 class="title is-size-1 pb-5">
+                *~Color Shift~*
+            </h1>
+            <p class="subtitle is-size-3">
+                p neat, huh
+            </p>
+        </div>
+    </section>
+</body>
+
+</html>
